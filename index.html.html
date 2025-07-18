@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Shannon!</title>
+  <style>
+    body {
+      background-image: url('flower.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff4081;
+      text-shadow: 2px 2px #ff1744;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .poem {
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));
+      padding: 30px;
+      margin-top: 30px;
+      font-size: 1.5em;
+      line-height: 1.6em;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      border-radius: 20px;
+      box-shadow:
+        0 0 0 4px #ffcc00,
+        0 0 10px 4px #ff69b4,
+        0 0 30px 8px rgba(255, 204, 0, 0.5);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #ff4081;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎂 Happy Birthday, Lyna! 🎉</h1>
+
+  <button onclick="document.getElementById('birthdaySong').play()">🎵 Tap Here to Start the Music!</button>
+
+  <audio id="birthdaySong">
+    <source src="bday-song.mp3" type="audio/mpeg">
+    <p>Your browser does not support HTML5 audio. Try using a different browser.</p>
+  </audio>
+
+  <div class="poem">
+    Today’s the day the skies burst bright,<br/>
+    With laughter, magic, joy, and light.<br/>
+    Lyna, the star we cheer,<br/>
+    You’ve brought sparkle year to year!<br/><br/>
+    May cupcakes rain and candles glow,<br/>
+    While glitter fireworks steal the show.<br/>
+    You’re dazzling, bold, a cosmic flame—<br/>
+    The world is better when you came! 🌈<br/><br/>
+    So dance like nobody's watching you,<br/>
+    Let dreams ignite in pink and blue.<br/>
+    This birthday blast is just your style—<br/>
+    Wild, radiant, and full of smiles! 🎁✨<br/>
+  </div>
+
+</body>
+</html>
